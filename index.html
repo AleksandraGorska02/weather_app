@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    
+
+   
+        <h1>Weather App</h1>
+    <div class="current-weather">
+        <div class="location"></div>
+        <div class="temperature"></div>
+        <div class="description"></div>
+        <div class="wind"></div>
+        <div class="tempfeels"></div>
+        <div class="pressure"></div>
+        <div class="humidity"></div>
+     
+    </div>
+
+    
+
+    <form id="location-form">
+      <label for="location-input">Enter location:</label>
+      <input type="text" id="location-input" name="location-input" class="input">
+      <button type="submit">Get Weather</button>
+    </form>
+
+
+    <div class="forecast">
+        <h2>Prognoza na 5 dni</h2>
+        <div class="forecast-data"></div>
+        </div>
+    
+
+
+    <div class="chart">
+        <h2>Analiza</h2>
+                <canvas id="temperature-chart" class="chart"></canvas>
+                <canvas id="wind-chart" class="chart"></canvas>
+                <canvas id="tempfeels-chart" class="chart"></canvas>
+                <canvas id="pressure-chart" class="chart"></canvas>
+                <canvas id="humidity-chart" class="chart"></canvas>
+    </div>
+   
+  </div>
+  
+
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+  <script src="script.js"></script>
+</body>
+
+</html>
